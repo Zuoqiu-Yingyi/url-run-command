@@ -27,8 +27,8 @@
      `insert.reg`: The registry key that will be written to the registry at installation time.
    - `delete.reg`: 卸载时将要从注册表中删除的注册表项<br>
      `delete.reg`: The registry key that will be removed from the registry when uninstalled.
-4. 同意对注册表的更改<br>
-   Agree to changes to the registry.
+4. 允许对注册表的更改<br>
+   Allow to change the registry.
 5. 安装完成<br>
    The installation is complete.
 6. 在 *Windows 资源管理器* 的地址栏中输入 `runurl://systeminfo; pause` 并回车, 检查 URL 协议 `runurl` 能否运行命令 `systeminfo; pause` (查看系统信息后暂停)<br>
@@ -73,8 +73,8 @@ OPTIONS
 
 1. 运行安装目录中的 `uninstall.bat` 批处理文件<br>
    Run the `uninstall.bat` batch file in your installation directory.
-2. 同意对注册表的更改<br>
-   Agree to changes to the registry.
+2. 允许对注册表的更改<br>
+   Allow to change the registry.
 3. 卸载完成<br>
    The uninstall is complete.
 
