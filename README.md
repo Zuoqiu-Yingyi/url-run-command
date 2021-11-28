@@ -66,6 +66,17 @@ OPTIONS
         help        查看参数指南 / view the parameter guide
 ```
 
+### 开发者选项 | DEVELOPER OPTIONS
+
+```powershell
+git clone https://github.com/Zuoqiu-Yingyi/url-run-command.git
+cd url-run-command
+g++ src\main.cpp -o dist\url2cmd -g -static-libgcc
+cd dist
+.\url2cmd.exe init --name "<自定义 URL 协议名 | name for custom URL scheme>" --powershell --parser "<自定义命令解析器路径 | path for custom command parser>"
+start .\insert.reg
+```
+
 ## 卸载 | UNINSTALL
 
 1. 运行安装目录中的 `uninstall.bat` 批处理文件`<br>`
