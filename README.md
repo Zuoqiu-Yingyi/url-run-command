@@ -13,8 +13,8 @@
   2. 调用系统命令行解析器 `CMD` 或 `PowerShell` 运行指令<br>
      Call the system command line parser `CMD` or `PowerShell` to run the commands.
 
-**注意**: 为了避免可能出现的 [远程代码执行(Remote code execution, RCE)](https://en.wikipedia.org/w/index.php?title=Remote_code_execution&redirect=no) 攻击, 请尽量使用足够长的随机字符串作为自定义协议名称<br>
-**Note**: To avoid possible [RCE(Remote code execution)](https://en.wikipedia.org/w/index.php?title=Remote_code_execution&redirect=no) attacks, try to use random strings long enough as custom URL scheme name.
+**注意**: 为了避免可能出现的 [远程命令/代码执行(Remote Command/Code Execution, RCE)](https://en.wikipedia.org/w/index.php?title=Remote_code_execution&redirect=no) 攻击, 请尽量使用足够长的随机字符串作为自定义协议名称<br>
+**Note**: To avoid possible [RCE(Remote Command/Code Execution)](https://en.wikipedia.org/w/index.php?title=Remote_code_execution&redirect=no) attacks, try to use random strings long enough as custom URL scheme name.
 
 ## 开始 | START
 
