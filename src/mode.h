@@ -69,11 +69,11 @@ void init(const std::string &scheme, std::string parser, const bool cmd, const b
     for (auto pos = parser.find("\\"); pos != -1; pos = parser.find("\\")) parser.replace(pos, 1, "/");
     for (auto pos = parser.find("/"); pos != -1; pos = parser.find("/")) parser.replace(pos, 1, "\\\\");
 
-    std::ofstream f_install, f_uninstall;
-    f_install.open("insert.reg");
-    f_uninstall.open("delete.reg");
+    std::ofstream f_insert_reg, f_delete_reg;
+    f_insert_reg.open("insert.reg");
+    f_delete_reg.open("delete.reg");
 
-    f_install << "Windows Registry Editor Version 5.00" << std::endl
+    f_insert_reg << "Windows Registry Editor Version 5.00" << std::endl
               << std::endl
               << stringFormat("[HKEY_CURRENT_USER\\Software\\Classes\\%s]", scheme_c_str) << std::endl
               << stringFormat("@=\"URL:%s\"", scheme_c_str) << std::endl
@@ -90,12 +90,12 @@ void init(const std::string &scheme, std::string parser, const bool cmd, const b
                               (debug ? "--debug" : ""),
                               parser.c_str())
               << std::endl;
-    f_uninstall << "Windows Registry Editor Version 5.00" << std::endl
+    f_delete_reg << "Windows Registry Editor Version 5.00" << std::endl
                 << std::endl
                 << stringFormat("[-HKEY_CURRENT_USER\\Software\\Classes\\%s]", scheme_c_str) << std::endl;
 
-    f_install.close();
-    f_uninstall.close();
+    f_insert_reg.close();
+    f_delete_reg.close();
 }
 
 }  // namespace url2cmd
