@@ -2,7 +2,7 @@
 
 ## v0.1.1 / 2021-11-28
 
-- 更改编译模式 / Change the compilation mode.
+- 更改链接模式为静态链接 / Change the link mode to static link.
 
 ## v0.1.0 / 2021-11-27
 
