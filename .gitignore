@@ -1,6 +1,6 @@
-.vscode
-dist
-url2cmd*
+.vscode/
+release/
+
 *.reg
 
 # Prerequisites
