@@ -70,10 +70,22 @@ OPTIONS
 
 ```powershell
 git clone https://github.com/Zuoqiu-Yingyi/url-run-command.git
+
 cd url-run-command
-g++ src\main.cpp -o dist\url2cmd -g -static
+
+g++ \
+   src\main.cpp \
+   -o dist\url2cmd \
+   -g \
+   -static
+
 cd dist
-.\url2cmd.exe init --name "<自定义 URL 协议名 | name for custom URL scheme>" --powershell --parser "<自定义命令解析器路径 | path for custom command parser>"
+
+.\url2cmd.exe init \
+   --name "<自定义 URL 协议名 | name for custom URL scheme>" \
+   --powershell \
+   --parser "<自定义命令解析器路径 | path for custom command parser>"
+
 start .\insert.reg
 ```
 
