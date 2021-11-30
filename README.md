@@ -1,5 +1,15 @@
 # url-run-command
 
+<center>
+
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Zuoqiu-Yingyi/url-run-command?include_prereleases)
+![GitHub Release Date](https://img.shields.io/github/release-date/Zuoqiu-Yingyi/url-run-command)
+![GitHub last commit](https://img.shields.io/github/last-commit/Zuoqiu-Yingyi/url-run-command)
+![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hy/Zuoqiu-Yingyi/url-run-command?label=hits)
+![GitHub all releases](https://img.shields.io/github/downloads/Zuoqiu-Yingyi/url-run-command/total)
+
+</center>
+
 使用 URL 协议运行命令(Run the command using URL protocol)
 
 ---
