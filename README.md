@@ -49,8 +49,8 @@
    Enter `runcmd://systeminfo; pause;` or `runcmd:systeminfo; pause;` in the address bar of Windows Explorer and enter to check if the URL scheme `runcmd` can run command `systeminfo; pause;` (pause after viewing system information).
 7. 点击下方链接, 检查浏览器链接能否使用 `runcmd` 协议运行命令 `systeminfo; pause;`  
    Click on links below to check if the browser link can run command `systeminfo; pause;`   using the `runcmd` protocol.
-   - [runcmd://systeminfo; pause;](runcmd://systeminfo%3B%20pause%3B)
-   - [runcmd:systeminfo; pause;](runcmd:systeminfo%3B%20pause%3B)
+   - [runcmd://systeminfo; pause;](https://diamondyuan.github.io/302/?location=runcmd%3A%2F%2Fsysteminfo%3B+pause%3B)
+   - [runcmd:systeminfo; pause;](https://diamondyuan.github.io/302/?location=runcmd%3Asysteminfo%3B+pause%3B)
 
 ## 预览 | PREVIEW
 
