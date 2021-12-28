@@ -45,14 +45,12 @@
    Allow to change the registry.
 5. 安装完成  
    The installation is complete.
-6. 在 *Windows 资源管理器* 的地址栏中输入 `runcmd://systeminfo; pause` 并回车, 检查 URL 协议 `runcmd` 能否运行命令 `systeminfo; pause` (查看系统信息后暂停)  
-   Enter `runcmd://systeminfo; pause` in the address bar of Windows Explorer and enter to check if the URL scheme `runcmd` can run command `systeminfo; pause` (pause after viewing system information)
+6. 在 *Windows 资源管理器* 的地址栏中输入 `runcmd://systeminfo; pause;` 或 `runcmd:systeminfo; pause;` 并回车, 检查 URL 协议 `runcmd` 能否运行命令 `systeminfo; pause;` (查看系统信息后暂停)  
+   Enter `runcmd://systeminfo; pause;` or `runcmd:systeminfo; pause;` in the address bar of Windows Explorer and enter to check if the URL scheme `runcmd` can run command `systeminfo; pause;` (pause after viewing system information)
+   - [runcmd://systeminfo; pause;](runcmd://systeminfo;pause)
+   - [runcmd:systeminfo; pause;](runcmd:systeminfo;pause)
 
 ## 预览 | PREVIEW
-
-[runcmd://ping jd.com -n 5; pause](runcmd://ping jd.com -n 5; pause)
-
-[runcmd:ping jd.com -n 5; pause](runcmd:ping jd.com -n 5; pause)
 
 ![PING](./images/preview.png)
 
