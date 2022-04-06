@@ -51,9 +51,9 @@ void run(const std::string &url, const std::string &parser, const bool cmd, cons
     if (debug) system("pause");
 
     if (cmd)
-        system(stringFormat("%s /C \"%s\"", parser.c_str(), UTF82GBK(command.c_str()).c_str()).c_str());
+        system(stringFormat("%s /C %s", parser.c_str(), UTF82GBK(command.c_str()).c_str()).c_str());
     else
-        system(stringFormat("%s -c \"%s\"", parser.c_str(), UTF82GBK(command.c_str()).c_str()).c_str());
+        system(stringFormat("%s -c %s", parser.c_str(), UTF82GBK(command.c_str()).c_str()).c_str());
 
     if (debug) system("pause");
 }

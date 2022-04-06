@@ -1,5 +1,10 @@
 # 更改日志 | CHANGE LOG
 
+## v0.1.3 / 2021-04-06
+
+- [v0.1.1 <=> v0.1.3](https://github.com/Zuoqiu-Yingyi/url-run-command/compare/v0.1.1...v0.1.3)
+- 移除命令行中无效的引号 / Remove invalid quotes in the command line.
+
 ## v0.1.2 / 2021-04-06
 
 - [v0.1.1 <=> v0.1.2](https://github.com/Zuoqiu-Yingyi/url-run-command/compare/v0.1.1...v0.1.2)
