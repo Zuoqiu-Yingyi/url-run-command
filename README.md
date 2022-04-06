@@ -2,13 +2,13 @@
 
 <center>
 
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Zuoqiu-Yingyi/url-run-command?include_prereleases&style=flat-square)
-![GitHub Release Date](https://img.shields.io/github/release-date/Zuoqiu-Yingyi/url-run-command?style=flat-square)
-![GitHub](https://img.shields.io/github/license/Zuoqiu-Yingyi/url-run-command?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/Zuoqiu-Yingyi/url-run-command?style=flat-square)
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Zuoqiu-Yingyi/url-run-command?include_prereleases&style=flat-square)](https://github.com/Zuoqiu-Yingyi/url-run-command/releases/latest)
+[![GitHub Release Date](https://img.shields.io/github/release-date/Zuoqiu-Yingyi/url-run-command?style=flat-square)](https://github.com/Zuoqiu-Yingyi/url-run-command/releases/latest)
+[![GitHub License](https://img.shields.io/github/license/Zuoqiu-Yingyi/url-run-command?style=flat-square)](https://github.com/Zuoqiu-Yingyi/url-run-command/blob/main/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Zuoqiu-Yingyi/url-run-command?style=flat-square)](https://github.com/Zuoqiu-Yingyi/url-run-command/commits/main)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Zuoqiu-Yingyi/url-run-command?style=flat-square)
 ![hits](https://hits.b3log.org/Zuoqiu-Yingyi/url-run-command.svg)
-![GitHub all releases](https://img.shields.io/github/downloads/Zuoqiu-Yingyi/url-run-command/total?style=flat-square)
+[![GitHub all releases](https://img.shields.io/github/downloads/Zuoqiu-Yingyi/url-run-command/total?style=flat-square)](https://github.com/Zuoqiu-Yingyi/url-run-command/releases)
 
 </center>
 
@@ -63,33 +63,33 @@
 Use the following command in the installation directory to view command line parameters.
 
 ```powershell
-PS > .\url2cmd.exe help
+PS > .\url-run.exe help
 Active code page: 65001
 SYNOPSIS
-        url2cmd.exe <url> (-c|-p) [--debug] [--parser <path>]
-        url2cmd.exe init [-n <scheme>] (-c|-p) [--debug] [--parser <path>]
-        url2cmd.exe help
+        url-run.exe <url> (-c|-p) [--debug] [--parser <path>]
+        url-run.exe init [-n <scheme>] (-c|-p) [--debug] [--parser <path>]
+        url-run.exe help
 
 OPTIONS
-        <url>       统一资源定位符 / Uniform Resource Locator, URL
-        -c, --cmd   使用 CMD 解析器 / use CMD parser
+        <url>       统一资源定位符 | Uniform Resource Locator, URL
+        -c, --cmd   使用 CMD 解析器 | use CMD parser
         -p, --powershell, --pwsh
-                    使用 PowerShell 解析器 / use PowerShell parser
+                    使用 PowerShell 解析器 | use PowerShell parser
 
-        --debug     输出调试信息 / output debug information
-        --parser    自定义命令解析器 / custom command parser
-        <path>      自定义命令解析器路径 / path of custom command parser
-        init        初始化注册表文件 / initialize the registry file
-        -n, --name  自定义 URL 协议名称 / custom URL scheme name
-        <scheme>    协议自定义名称 / name of custom scheme
-        -c, --cmd   使用 CMD 解析器 / use CMD parser
+        --debug     输出调试信息 | output debug information
+        --parser    自定义命令解析器 | custom command parser
+        <path>      自定义命令解析器路径 | path of custom command parser
+        init        初始化注册表文件 | initialize the registry file
+        -n, --name  自定义 URL 协议名称 | custom URL scheme name
+        <scheme>    协议自定义名称 | name of custom scheme
+        -c, --cmd   使用 CMD 解析器 | use CMD parser
         -p, --powershell, --pwsh
-                    使用 PowerShell 解析器 / use PowerShell parser
+                    使用 PowerShell 解析器 | use PowerShell parser
 
-        --debug     输出调试信息 / output debug information
-        --parser    自定义命令解析器 / custom command parser
-        <path>      自定义命令解析器路径 / path of custom command parser
-        help        查看参数指南 / view the parameter guide
+        --debug     输出调试信息 | output debug information
+        --parser    自定义命令解析器 | custom command parser
+        <path>      自定义命令解析器路径 | path of custom command parser
+        help        查看参数指南 | view the parameter guide
 ```
 
 ### 开发者选项 | DEVELOPER OPTIONS
@@ -101,13 +101,13 @@ cd url-run-command
 
 g++ \
    src\main.cpp \
-   -o dist\url2cmd \
+   -o dist\url-run \
    -g \
    -static
 
 cd dist
 
-.\url2cmd.exe init \
+.\url-run.exe init \
    --name "<自定义 URL 协议名 | name for custom URL scheme>" \
    --powershell \
    --parser "<自定义命令解析器路径 | path for custom command parser>"

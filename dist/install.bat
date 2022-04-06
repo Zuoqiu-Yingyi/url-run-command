@@ -1,2 +1,2 @@
-.\url2cmd.exe init --name runcmd --powershell --parser powershell
+.\url-run.exe init --name runcmd --powershell --parser powershell
 start .\insert.reg

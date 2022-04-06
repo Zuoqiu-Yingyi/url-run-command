@@ -31,22 +31,22 @@ int main(int argc, char *argv[])
     bool          debug    = false;
     url2cmd::mode selected = url2cmd::mode::run;
 
-    auto required_c_p  = clipp::required("-c", "--cmd").set(cmd).doc("使用 CMD 解析器 / use CMD parser") | clipp::required("-p", "--powershell", "--pwsh").doc("使用 PowerShell 解析器 / use PowerShell parser");
-    auto option_debug  = clipp::option("--debug").set(debug).doc("输出调试信息 / output debug information");
-    auto option_parser = clipp::option("--parser").doc("自定义命令解析器 / custom command parser") & clipp::value("path", parser).doc("自定义命令解析器路径 / path of custom command parser");
+    auto required_c_p  = clipp::required("-c", "--cmd").set(cmd).doc("使用 CMD 解析器 | use CMD parser") | clipp::required("-p", "--powershell", "--pwsh").doc("使用 PowerShell 解析器 | use PowerShell parser");
+    auto option_debug  = clipp::option("--debug").set(debug).doc("输出调试信息 | output debug information");
+    auto option_parser = clipp::option("--parser").doc("自定义命令解析器 | custom command parser") & clipp::value("path", parser).doc("自定义命令解析器路径 | path of custom command parser");
 
-    auto run = (clipp::value("url", url).doc("统一资源定位符 / Uniform Resource Locator, URL"),
+    auto run = (clipp::value("url", url).doc("统一资源定位符 | Uniform Resource Locator, URL"),
                 required_c_p,
                 option_debug,
                 option_parser);
 
-    auto init = (clipp::command("init").set(selected, url2cmd::mode::init).doc("初始化注册表文件 / initialize the registry file"),
-                 clipp::option("-n", "--name").doc("自定义 URL 协议名称 / custom URL scheme name") & clipp::value("scheme", scheme).doc("协议自定义名称 / name of custom scheme"),
+    auto init = (clipp::command("init").set(selected, url2cmd::mode::init).doc("初始化注册表文件 | initialize the registry file"),
+                 clipp::option("-n", "--name").doc("自定义 URL 协议名称 | custom URL scheme name") & clipp::value("scheme", scheme).doc("协议自定义名称 | name of custom scheme"),
                  required_c_p,
                  option_debug,
                  option_parser);
 
-    auto help = (clipp::command("help").set(selected, url2cmd::mode::help).doc("查看参数指南 / view the parameter guide"));
+    auto help = (clipp::command("help").set(selected, url2cmd::mode::help).doc("查看参数指南 | view the parameter guide"));
 
     auto cli = ((run | init | help));
 
@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
                 break;
             case url2cmd::mode::init:
                 url2cmd::init(scheme, parser, cmd, debug);
-                std::cout << "注册表文件初始化成功 / registry file initialization was successful" << std::endl;
+                std::cout << "注册表文件初始化成功 | registry file initialization was successful" << std::endl;
                 break;
             case url2cmd::mode::help:
                 std::cout << clipp::make_man_page(cli, argv[0]);
@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
         }
     }
     else {
-        std::cout << "ERROR: 参数解析失败! / Argument parse failed!" << std::endl;
+        std::cout << "ERROR: 参数解析失败! | Argument parse failed!" << std::endl;
         showArg(argc, argv);
         std::cout << clipp::make_man_page(cli, argv[0]);
         system("pause");
