@@ -1,0 +1,1 @@
+start .\delete.reg
